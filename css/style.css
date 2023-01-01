@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem=10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+h1,h2,h3{
+    font-family: 'Playfair Display', serif;
+    margin: 0 0 5rem 0;
+}
+
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 4rem;
+}
+h3{
+    font-size: 3rem;
+}
+
+/* Utilidades */
+.text-center{
+    text-align: center;
+}
+.max-width-30{
+    max-width: 30rem;
+}
+
+/* Globales */
+a{
+    text-decoration: none;
+    color: #000;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Ajustes generales para un img */
+img{
+    max-width: 100%; /* Se adapta al tamaño del div contenedor */
+    display: block; /* La imagen da un poco de margen hacia abajo*/
+}
+
+/*.btn{
+    background-color: #8cbc00;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+    text-align: center;
+    border: none;
+}
+.btn:hover{
+    background-color: #769c02;
+    cursor: pointer;
+}*/
+
+/* Header y Navegacion */
+.nombre-sitio{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.nombre-sitio span{
+    color: #037bc0;
+    font-size: 5rem;
+}
+
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+/*.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 55rem;
+}*
+
+/* Nosotros.html */
+.contenido-nosotros{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax( 25rem,1fr ));
+    column-gap: 4rem;
+}
+
+/* Footer */
+.site-footer{
+    margin-top: 5rem;
+    border-top: 1.5px solid #e1e1e1;
+    padding-top: 5rem;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 5rem;   
+}
+
+.grid-footer h3{
+    margin: 0;
+ }
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem
+}
+
+.copyright{
+    text-align: center;
+    font-weight: 900;
+}

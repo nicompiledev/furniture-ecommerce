@@ -52,21 +52,25 @@ img{
     display: block; /* La imagen da un poco de margen hacia abajo*/
 }
 
-/*.btn{
+.btn{
     background-color: #8cbc00;
     display: block;
     color: #fff;
     text-transform: uppercase;
     font-weight: 900;
     padding: 1rem;
-    transition: background-color .3s ease-out;
+    transition: backgrond-color .3s ease;
+    -webkit-transition: backgrond-color .3s ease;
+    -moz-transition: backgrond-color .3s ease;
+    -ms-transition: backgrond-color .3s ease;
+    -o-transition: backgrond-color .3s ease;
     text-align: center;
     border: none;
 }
 .btn:hover{
     background-color: #769c02;
     cursor: pointer;
-}*/
+}
 
 /* Header y Navegacion */
 .nombre-sitio{
@@ -90,13 +94,142 @@ img{
     padding: 2rem 0;
 }
 
-/*.hero{
+.hero{
     background-image: url(../img/principal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 55rem;
-}*
+}
+
+/* Categorias */
+.categorias{
+    padding-top: 5rem;
+}
+
+.categorias h2{
+    text-align: center;
+}
+
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 4rem;
+}
+
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Nosotros */
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    padding: 10rem 0;
+
+}
+
+.sobre-nosotros-grid{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.texto-nosotros{
+    color: #fff;
+    flex-basis: 46%;
+}
+
+/* Listado de productos en main */
+.contenido-principal{
+    padding-top: 5rem;
+}
+
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+}
+
+.producto:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.producto:nth-child(1) img{
+    height: 44.2rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.producto{
+    background-color: #037bc0;
+}
+
+.texto-producto{
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+.texto-producto h3{
+    margin: 0;
+}
+
+.texto-producto p{
+    margin: 0 0 .5rem 0
+}
+
+.texto-producto .precio{
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+
+
+
 
 /* Nosotros.html */
 .contenido-nosotros{
@@ -104,6 +237,11 @@ img{
     grid-template-columns: 2fr 1fr;
     grid-template-columns: repeat(auto-fit, minmax( 25rem,1fr ));
     column-gap: 4rem;
+}
+.informacion-nosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Footer */

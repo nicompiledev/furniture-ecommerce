@@ -244,6 +244,37 @@ img{
     justify-content: center;
 }
 
+/* Blog y Entrada*/
+.contenedor-blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.entrada{
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 5rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+}
+
+.entrada-meta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada-meta p{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.entrada-meta span{
+    color: #037bc0;
+    font-size: 16px;
+}
+
 /* Footer */
 .site-footer{
     margin-top: 5rem;
